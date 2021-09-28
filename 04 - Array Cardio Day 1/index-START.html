@@ -120,7 +120,8 @@
       // 7. sort Exercise
       // Sort the people alphabetically by last name
       const alpha = people.sort(function (lastOne, nextOne) {
-        console.log(lastOne);
+        const [last, first] = lastOne.split(", ");
+        console.log(last, first);
       });
 
       // 8. Reduce Exercise
