@@ -21,7 +21,7 @@
 
       fetch(endpoint)
         .then((blob) => blob.json())
-        .then((data) => (cities = data));
+        .then((data) => cities.push(...data));
     </script>
   </body>
 </html>
