@@ -102,6 +102,10 @@
       let lastChecked;
 
       function handleCheck(e) {
+        //Check if they had the shift key down
+        if (e.shiftKey && this.checked) {
+        }
+
         lastChecked = this;
       }
       checkboxes.forEach((checkbox) =>
