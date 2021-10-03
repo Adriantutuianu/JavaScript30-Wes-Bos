@@ -34,6 +34,10 @@ function handleProgress() {
   progressBar.style.flexBasis = `${percent}%`;
 }
 
+function scrub(e) {
+  console.log(e);
+}
+
 //Hook up the event listener //
 video.addEventListener("click", togglePlay);
 video.addEventListener("play", updateButton);
@@ -46,3 +50,4 @@ ranges.forEach((range) => range.addEventListener("change", handleRangeUpdate));
 ranges.forEach((range) =>
   range.addEventListener("mousemove", handleRangeUpdate)
 );
+progress.addEventListener("click", scrub);
