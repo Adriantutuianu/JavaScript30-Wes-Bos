@@ -242,8 +242,10 @@
 
       function checkSlide(e) {
         sliderImages.forEach((slideImage) => {
+          //Half way through image
           const slideInAt =
             window.scrollY + window.innerHeight - slideImage.height / 2;
+          //Bottom of the image
           const imageBottom = slideImage.offsetTop + slideImage.height;
           const isHalfShow = slideInAt > slideImage.offsetTop;
           const isNotScrolledPast = window.scrollY < imageBottom;
